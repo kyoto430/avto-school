@@ -22,6 +22,9 @@ new Swiper('.sale__slider', {
       slidesPerView: 2,
     },
     1024: {
+      slidesPerView: 3,
+    },
+    1280: {
       slidesPerView: 4,
     },
   },
