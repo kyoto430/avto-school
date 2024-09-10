@@ -31,33 +31,33 @@
             </li>
             <li>
               <img src="./assets/images/icons/icon_clock.svg" alt="icon_clock">
-              <span>с 10:00 до 20:00</span>
+              <span>с 10:00 до 21:00</span>
             </li>
           </ul>
           <ul>
             <li>
-              <a href="#">
+              <a href="https://t.me/Goroddorog_auto" target="_blank">
                 <img src="./assets/images/icons/icon_tg.svg" alt="icon_tg">
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://vk.com/gorod_dorog_avto" target="_blank">
                 <img src="./assets/images/icons/icon_vk.svg" alt="icon_vk">
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://wa.me/79935994676" target="_blank">
                 <img src="./assets/images/icons/icon_whats.svg" alt="icon_whats">
               </a>
             </li>
             <li>
-              <a href="mailto:#">
+              <a href="mailto:gorod5dorog@yandex.ru">
                 <img src="./assets/images/icons/icon_mail.svg" alt="icon_mail">
               </a>
             </li>
           </ul>
         </div>
-        <a class="action__btn btn" href="#">Записаться на пробный урок</a>
+        <a class="action__btn btn popup-link" href="#popup-offer">Записаться на пробный урок</a>
       </div>
       <div class="header__bottom-container">
         <nav class="header__burger">
@@ -75,7 +75,7 @@
               <a class="menu__link link" href="#">Об автошколе</a>
             </li>
             <li class="menu__item drop__link">
-              <a class="menu__link link" data-target="menu1" href="#">Цены</a>
+              <a class="menu__link link drop__icon" data-target="menu1" href="#">Цены</a>
               <ul class="sub-menu__list" id="menu1">
                 <li>
                   <a class="sub-menu__link link" href="#">Акции</a>
@@ -105,16 +105,67 @@
             </li>
           </ul>
         </nav>
+        <div class="header__burger-bottom">
+          <a class="header__burger-bottom-link" href="#">Контакты</a>
+          <ul class="header__burger-info">
+            <li>
+              <img src="./assets/images/icons/icon_clock-black.svg" alt="icon_clock">
+              <span>с 10:00 до 21:00 без выходных</span>
+            </li>
+            <li>
+              <a href="tel:+8(499)3220943">
+                <img src="./assets/images/icons/icon_phone-black.svg" alt="icon_phone">
+                8 (499) 322 09 43</a>
+            </li>
+            <li>
+              <ul class="header__burger-socials">
+                <li>
+                  <a href="https://t.me/Goroddorog_auto" target="_blank">
+                    <img src="./assets/images/icons/icon_tg.svg" alt="icon_tg">
+                  </a>
+                </li>
+                <li>
+                  <a href="https://vk.com/gorod_dorog_avto" target="_blank">
+                    <img src="./assets/images/icons/icon_vk.svg" alt="icon_vk">
+                  </a>
+                </li>
+                <li>
+                  <a href="https://wa.me/79935994676" target="_blank">
+                    <img src="./assets/images/icons/icon_whats.svg" alt="icon_whats">
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <a class="action__btn btn mobile-action__btn mobile-action__btn-2 popup-link" href="#popup-offer">Записаться
+            на пробный урок</a>
+        </div>
       </div>
     </div>
     <div class="overlay"></div>
     <div class="burger__container">
       <a class="header__logo mobile__logo" href="index.html">
-        <img src="./assets/images/icons/img_logo.svg" alt="logo">
+        <img src="./assets/images/logo/img_logo.png" alt="logo">
       </a>
-      <div class="icon__burger">
-        <div class="menu__burger">
-          <span></span>
+      <a class="action__btn btn mobile-action__btn popup-link" href="#popup-offer">Записаться на пробный урок</a>
+      <div class="burger__right-container">
+        <div class="header__top-links">
+          <ul class="header__links-row-mobile">
+            <li>
+              <a href="tel:+8(499)3220943">
+                <img src="./assets/images/icons/icon_phone.svg" alt="icon_phone">
+                8 (499) 322 09 43</a>
+            </li>
+            <li>
+              <img src="./assets/images/icons/icon_clock.svg" alt="icon_clock">
+              <span>с 10:00 до 21:00</span>
+            </li>
+          </ul>
+        </div>
+        <div class="icon__burger">
+          <div class="menu__burger">
+            <span></span>
+          </div>
         </div>
       </div>
     </div>
@@ -134,6 +185,28 @@
           </div>
           <a class="banner__button btn popup-link" href="#popup-offer">Записаться</a>
         </div>
+        <ul class="banner__socials">
+          <li>
+            <a href="https://t.me/Goroddorog_auto" target="_blank">
+              <img src="./assets/images/icons/icon_tg.svg" alt="icon_tg">
+            </a>
+          </li>
+          <li>
+            <a href="https://vk.com/gorod_dorog_avto" target="_blank">
+              <img src="./assets/images/icons/icon_vk.svg" alt="icon_vk">
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/79935994676" target="_blank">
+              <img src="./assets/images/icons/icon_whats.svg" alt="icon_whats">
+            </a>
+          </li>
+          <li>
+            <a href="mailto:gorod5dorog@yandex.ru">
+              <img src="./assets/images/icons/icon_mail.svg" alt="icon_mail">
+            </a>
+          </li>
+        </ul>
       </div>
     </section>
     <section class="tariffs section container-xl">
@@ -184,12 +257,14 @@
               </li>
             </ul>
             <div class="tariffs__cards">
-              <div class="tariffs__card tariff__card-1">
+              <div class="tariffs__card tariff__card-1 tariff__card-2">
                 <img class="tariffs__card-logo" src="./assets/images/logo/img_logo-card.png" alt="logo">
                 <img class="tarffis__card-img" src="./assets/images/tariffs/car-01.png" alt="01">
                 <span class="tariffs__badge">популярный тариф (акционный)</span>
                 <div class="tariffs__card-description">
-                  <span class="tariffs__card-title">Сезонный  16 часов</span>
+                  <p class="tariffs__card-title">Сезонный
+                    <span>16 часов</span>
+                  </p>
                   <div class="tariffs__card-top">
                     <div class="tariffs__card-top-item">
                       <img src="./assets/images/icons/icon_like.svg" alt="icon_like">
@@ -200,17 +275,55 @@
                       <span>16-18 часов</span>
                     </div>
                   </div>
+                  <div class="tariffs__card-top tariffs__list-items">
+                    <div class="tariffs__card-top-item">
+                      <img src="./assets/images/icons/icon_check-01.svg" alt="icon_check">
+                      <span>большинчтво наших студентов выбирают этот тариф</span>
+                    </div>
+                    <div class="tariffs__card-top-item">
+                      <img src="./assets/images/icons/icon_check-01.svg" alt="icon_check">
+                      <span>теория очно или онлайн</span>
+                    </div>
+                    <div class="tariffs__card-top-item">
+                      <img src="./assets/images/icons/icon_check-01.svg" alt="icon_check">
+                      <span>курс вождения 30 часов</span>
+                    </div>
+                    <div class="tariffs__card-top-item">
+                      <img src="./assets/images/icons/icon_check-01.svg" alt="icon_check">
+                      <span>гсм</span>
+                    </div>
+                    <div class="tariffs__card-top-item">
+                      <img src="./assets/images/icons/icon_check-01.svg" alt="icon_check">
+                      <span>страховка</span>
+                    </div>
+                    <div class="tariffs__card-top-item">
+                      <img src="./assets/images/icons/icon_check-01.svg" alt="icon_check">
+                      <span>еженедельные прямые эфиры со Станиславом Спасских</span>
+                    </div>
+                    <div class="tariffs__card-top-item">
+                      <img src="./assets/images/icons/icon_check-01.svg" alt="icon_check">
+                      <span>внутренние экзамены и все пересдачи</span>
+                    </div>
+                    <div class="tariffs__card-top-item">
+                      <img src="./assets/images/icons/icon_check-01.svg" alt="icon_check">
+                      <span>техническая поддержка 7 дней в неделю</span>
+                    </div>
+                    <div class="tariffs__card-top-item">
+                      <img src="./assets/images/icons/icon_check-01.svg" alt="icon_check">
+                      <span>эскортирование на экзамене в ГИБДД</span>
+                    </div>
+                  </div>
                   <div class="tariffs__card-bottom">
                     <div class="tariffs__card-price price-full">
                       <span>Полная цена:</span>
-                      <span class="lt">33 400 P</span>
+                      <span class="lt">33 400 &#8381</span>
                     </div>
                     <div class="tariffs__card-price price-sale">
                       <span>Со скидкой:</span>
-                      <span>30 400 P</span>
+                      <span>30 400 &#8381</span>
                     </div>
                     <div class="tariffs__card-price price">
-                      <span>26 448 P</span>
+                      <span>26 448 &#8381</span>
                       <span>(- 13% НДФЛ )</span>
                     </div>
                   </div>
@@ -218,10 +331,24 @@
                 </div>
               </div>
               <div class="tariffs__card tariff__card-2">
+                <img class="tariffs__card-logo" src="./assets/images/logo/img_logo-card.png" alt="logo">
+                <img class="tarffis__card-img" src="./assets/images/tariffs/car-01.png" alt="01">
                 <span class="tariffs__badge">акционный тариф</span>
                 <div class="tariffs__card-description card-description-2">
-                  <span class="tariffs__card-title">Оптима 34 часа</span>
+                  <p class="tariffs__card-title">Оптима
+                    <span>34 часа</span>
+                  </p>
                   <div class="tariffs__card-top">
+                    <div class="tariffs__card-top-item">
+                      <img src="./assets/images/icons/icon_like.svg" alt="icon_like">
+                      <span>8 занятий</span>
+                    </div>
+                    <div class="tariffs__card-top-item">
+                      <img src="./assets/images/icons/icon_like.svg" alt="icon_like">
+                      <span>16-18 часов</span>
+                    </div>
+                  </div>
+                  <div class="tariffs__card-top tariffs__list-items">
                     <div class="tariffs__card-top-item">
                       <img src="./assets/images/icons/icon_check-01.svg" alt="icon_check">
                       <span>большинчтво наших студентов выбирают этот тариф</span>
@@ -262,29 +389,31 @@
                   <div class="tariffs__card-bottom">
                     <div class="tariffs__card-price price-half">
                       <span>Первый взнос:</span>
-                      <span>5 000 P</span>
+                      <span>5 000 &#8381</span>
                     </div>
                     <div class="tariffs__card-price price-full">
                       <span>Полная цена:</span>
-                      <span>42 400 P</span>
+                      <span class="lt">42 400 &#8381</span>
                     </div>
                     <div class="tariffs__card-price price-sale">
                       <span>Со скидкой:</span>
-                      <span>39 400 P</span>
+                      <span>39 400 &#8381</span>
                     </div>
                     <div class="tariffs__card-price price">
-                      <span>43 278 P</span>
+                      <span>43 278 &#8381</span>
                       <span>(- 13% НДФЛ )</span>
                     </div>
                   </div>
                   <a class="card__popup btn popup-link" href="#popup-offer">Начать обучение</a>
                 </div>
               </div>
-              <div class="tariffs__card tariff__card-1">
+              <div class="tariffs__card tariff__card-1 tariff__card-2">
                 <img class="tariffs__card-logo" src="./assets/images/logo/img_logo-card.png" alt="logo">
                 <img class="tarffis__card-img" src="./assets/images/tariffs/car-02.png" alt="02">
                 <div class="tariffs__card-description">
-                  <span class="tariffs__card-title">Ультра 56/57 часов вождения</span>
+                  <p class="tariffs__card-title">Ультра
+                    <span>56/57 часов вождения</span>
+                  </p>
                   <div class="tariffs__card-top">
                     <div class="tariffs__card-top-item">
                       <img src="./assets/images/icons/icon_like.svg" alt="icon_like">
@@ -295,24 +424,62 @@
                       <span>56-57 часов</span>
                     </div>
                   </div>
+                  <div class="tariffs__card-top tariffs__list-items">
+                    <div class="tariffs__card-top-item">
+                      <img src="./assets/images/icons/icon_check-01.svg" alt="icon_check">
+                      <span>большинчтво наших студентов выбирают этот тариф</span>
+                    </div>
+                    <div class="tariffs__card-top-item">
+                      <img src="./assets/images/icons/icon_check-01.svg" alt="icon_check">
+                      <span>теория очно или онлайн</span>
+                    </div>
+                    <div class="tariffs__card-top-item">
+                      <img src="./assets/images/icons/icon_check-01.svg" alt="icon_check">
+                      <span>курс вождения 30 часов</span>
+                    </div>
+                    <div class="tariffs__card-top-item">
+                      <img src="./assets/images/icons/icon_check-01.svg" alt="icon_check">
+                      <span>гсм</span>
+                    </div>
+                    <div class="tariffs__card-top-item">
+                      <img src="./assets/images/icons/icon_check-01.svg" alt="icon_check">
+                      <span>страховка</span>
+                    </div>
+                    <div class="tariffs__card-top-item">
+                      <img src="./assets/images/icons/icon_check-01.svg" alt="icon_check">
+                      <span>еженедельные прямые эфиры со Станиславом Спасских</span>
+                    </div>
+                    <div class="tariffs__card-top-item">
+                      <img src="./assets/images/icons/icon_check-01.svg" alt="icon_check">
+                      <span>внутренние экзамены и все пересдачи</span>
+                    </div>
+                    <div class="tariffs__card-top-item">
+                      <img src="./assets/images/icons/icon_check-01.svg" alt="icon_check">
+                      <span>техническая поддержка 7 дней в неделю</span>
+                    </div>
+                    <div class="tariffs__card-top-item">
+                      <img src="./assets/images/icons/icon_check-01.svg" alt="icon_check">
+                      <span>эскортирование на экзамене в ГИБДД</span>
+                    </div>
+                  </div>
                   <div class="tariffs__card-bottom">
                     <div class="tariffs__card-price price-full">
                       <span class="text-m">Полная цена:</span>
-                      <span class="text-m">48 000 P</span>
+                      <span class="text-m">48 000 &#8381</span>
                     </div>
                     <div class="tariffs__card-price price">
-                      <span>41 760 P</span>
+                      <span>41 760 &#8381</span>
                       <span>(- 13% НДФЛ )</span>
                     </div>
                   </div>
                   <a class="card__popup btn popup-link" href="#popup-offer">Начать обучение</a>
                 </div>
               </div>
-              <div class="tariffs__card tariff__card-1">
+              <div class="tariffs__card tariff__card-1 tariff__card-2">
                 <img class="tariffs__card-logo" src="./assets/images/logo/img_logo-card.png" alt="logo">
                 <img class="tarffis__card-img" src="./assets/images/tariffs/car-03.png" alt="03">
                 <div class="tariffs__card-description">
-                  <span class="tariffs__card-title">Бриллиант</span>
+                  <p class="tariffs__card-title">Бриллиант</p>
                   <div class="tariffs__card-top">
                     <div class="tariffs__card-top-item">
                       <img src="./assets/images/icons/icon_like.svg" alt="icon_like">
@@ -322,18 +489,56 @@
                       <img src="./assets/images/icons/icon_like.svg" alt="icon_like">
                       <span>8 часов по практике (4 занятия)</span>
                     </div>
+                    <div class="tariffs__card-top tariffs__list-items">
+                      <div class="tariffs__card-top-item">
+                        <img src="./assets/images/icons/icon_check-01.svg" alt="icon_check">
+                        <span>большинчтво наших студентов выбирают этот тариф</span>
+                      </div>
+                      <div class="tariffs__card-top-item">
+                        <img src="./assets/images/icons/icon_check-01.svg" alt="icon_check">
+                        <span>теория очно или онлайн</span>
+                      </div>
+                      <div class="tariffs__card-top-item">
+                        <img src="./assets/images/icons/icon_check-01.svg" alt="icon_check">
+                        <span>курс вождения 30 часов</span>
+                      </div>
+                      <div class="tariffs__card-top-item">
+                        <img src="./assets/images/icons/icon_check-01.svg" alt="icon_check">
+                        <span>гсм</span>
+                      </div>
+                      <div class="tariffs__card-top-item">
+                        <img src="./assets/images/icons/icon_check-01.svg" alt="icon_check">
+                        <span>страховка</span>
+                      </div>
+                      <div class="tariffs__card-top-item">
+                        <img src="./assets/images/icons/icon_check-01.svg" alt="icon_check">
+                        <span>еженедельные прямые эфиры со Станиславом Спасских</span>
+                      </div>
+                      <div class="tariffs__card-top-item">
+                        <img src="./assets/images/icons/icon_check-01.svg" alt="icon_check">
+                        <span>внутренние экзамены и все пересдачи</span>
+                      </div>
+                      <div class="tariffs__card-top-item">
+                        <img src="./assets/images/icons/icon_check-01.svg" alt="icon_check">
+                        <span>техническая поддержка 7 дней в неделю</span>
+                      </div>
+                      <div class="tariffs__card-top-item">
+                        <img src="./assets/images/icons/icon_check-01.svg" alt="icon_check">
+                        <span>эскортирование на экзамене в ГИБДД</span>
+                      </div>
+                    </div>
                   </div>
                   <div class="tariffs__card-bottom">
                     <div class="tariffs__card-price price-half">
                       <span>Первый взнос:</span>
-                      <span>5 000 P</span>
+                      <span>5 000 &#8381</span>
                     </div>
                     <div class="tariffs__card-price price-full">
                       <span class="text-m">Полная цена:</span>
-                      <span class="text-m">93 000 P</span>
+                      <span class="text-m">93 000 &#8381</span>
                     </div>
                     <div class="tariffs__card-price price">
-                      <span>80 910 P</span>
+                      <span>80 910 &#8381</span>
                       <span>(- 13% НДФЛ )</span>
                     </div>
                   </div>
@@ -355,7 +560,8 @@
                 <img src="./assets/images/icons/icon_world.svg" alt="icon_world">
                 <span>Самая широкая география вождения</span>
               </div>
-              <a class="item__popup btn popup-link" href="#popup-offer">Выбрать инструктора</a>
+              <a class="item__popup btn" href="https://goroddorog-avto.ru/about/instructors/" target="_blank">Выбрать
+                инструктора</a>
             </div>
             <div class="tariffs__item">
               <div class="tariffs__item-description">
@@ -396,7 +602,7 @@
               </div>
               <div class="options__card-bottom">
                 <div class="options__list-price">
-                  <span>4 900 P</span>
+                  <span>4 900 &#8381</span>
                   <span>4 263 P (-13% НДФЛ)</span>
                 </div>
                 <a class="options__popup btn popup-link" href="#popup-offer">
@@ -424,7 +630,7 @@
               </div>
               <div class="options__card-bottom">
                 <div class="options__list-price">
-                  <span>4 500 P</span>
+                  <span>4 500 &#8381</span>
                   <span>3 915 P (-13% НДФЛ)</span>
                 </div>
                 <a class="options__popup btn popup-link" href="#popup-offer">
@@ -452,7 +658,7 @@
               </div>
               <div class="options__card-bottom">
                 <div class="options__list-price">
-                  <span>18 900 P</span>
+                  <span>18 900 &#8381</span>
                   <span>16 433 P (-13% НДФЛ)</span>
                 </div>
                 <a class="options__popup btn popup-link" href="#popup-offer">
@@ -479,29 +685,20 @@
                 <div class="slide swiper-slide" style="background-image: url(./assets/images/sale/01.jpg)">
                   <span class="slide__number">01</span>
                   <div class="slide__description">
-                    <h3>Приведи друга и получи скидку</h3>
+                    <h3>Приведи друга</h3>
                     <p>
-                      С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности играет
-                      важную роль в формировании дальнейших направлений развития. Не следует, однако забывать, что
-                      дальнейшее развитие различных форм деятельности требуют от нас анализа форм развития.
-                      Разнообразный
-                      и
-                      богатый опыт постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет
-                      выполнять важные задания по разработке систем массового участия.
+                      Чтобы узнать сколько денег можно сэкономить на обучении в автошколе “Город дорог” просто позвоните
+                      одному из наших менеджеров.
                     </p>
                   </div>
-
                 </div>
                 <div class="slide swiper-slide" style="background-image: url(./assets/images/sale/02.jpg)">
                   <span class="slide__number">02</span>
                   <div class="slide__description">
                     <h3>Скидка в день обращения</h3>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quo repudiandae soluta ipsum
-                      dolore
-                      quos recusandae quas, eligendi ad. Et reiciendis provident, non excepturi dolore voluptatibus
-                      id!
-                      Omnis, eligendi vel.
+                      Чтобы узнать сколько денег можно сэкономить на обучении в автошколе “Город дорог” просто позвоните
+                      одному из наших менеджеров.
                     </p>
                   </div>
                 </div>
@@ -510,11 +707,8 @@
                   <div class="slide__description">
                     <h3>Скидка студентам</h3>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quo repudiandae soluta ipsum
-                      dolore
-                      quos recusandae quas, eligendi ad. Et reiciendis provident, non excepturi dolore voluptatibus
-                      id!
-                      Omnis, eligendi vel.
+                      Чтобы узнать сколько денег можно сэкономить на обучении в автошколе “Город дорог” просто предъявив
+                      зачетку или студенческий билет!
                     </p>
                   </div>
                 </div>
@@ -523,11 +717,7 @@
                   <div class="slide__description">
                     <h3>50% скидка в день рождения</h3>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quo repudiandae soluta ipsum
-                      dolore
-                      quos recusandae quas, eligendi ad. Et reiciendis provident, non excepturi dolore voluptatibus
-                      id!
-                      Omnis, eligendi vel.
+                      Получите скидку в 5% просто предъявив паспорт с датой рождения.
                     </p>
                   </div>
                 </div>
@@ -556,7 +746,7 @@
             </div>
             <div class="service__list-row">
               <span class="service__list-text">Вождение в вечернее время или выходные дни</span>
-              <span class="service__list-text">+ 7 000 P</span>
+              <span class="service__list-text">+ 7 000 &#8381</span>
               <div class="service__list-item">
                 <span class="icon-check"></span>
                 <span class="service__list-text">входит в стоимость</span>
@@ -564,7 +754,7 @@
             </div>
             <div class="service__list-row">
               <span class="service__list-text">Доступ к онлайн вебинарам и видеоурокам</span>
-              <span class="service__list-text">+ 7 000 P</span>
+              <span class="service__list-text">+ 7 000 &#8381</span>
               <div class="service__list-item">
                 <span class="icon-check"></span>
                 <span class="service__list-text">входит в стоимость</span>
@@ -572,7 +762,7 @@
             </div>
             <div class="service__list-row">
               <span class="service__list-text">Литература</span>
-              <span class="service__list-text">+ 7 000 P</span>
+              <span class="service__list-text">+ 7 000 &#8381</span>
               <div class="service__list-item">
                 <span class="icon-check"></span>
                 <span class="service__list-text">входит в стоимость</span>
@@ -580,7 +770,7 @@
             </div>
             <div class="service__list-row">
               <span class="service__list-text">Пересдача экзаменов</span>
-              <span class="service__list-text">+ 7 000 P</span>
+              <span class="service__list-text">+ 7 000 &#8381</span>
               <div class="service__list-item">
                 <span class="icon-check"></span>
                 <span class="service__list-text">входит в стоимость</span>
@@ -588,7 +778,7 @@
             </div>
             <div class="service__list-row">
               <span class="service__list-text">Подготовка пакета документов для ГИБДД</span>
-              <span class="service__list-text">+ 7 000 P</span>
+              <span class="service__list-text">+ 7 000 &#8381</span>
               <div class="service__list-item">
                 <span class="icon-check"></span>
                 <span class="service__list-text">входит в стоимость</span>
@@ -688,12 +878,12 @@
             <div class="feedback__form-inputs">
               <input class="feedback__input _req icon-user" type="text" name="name" id="name-1"
                 placeholder="Введите Ваше имя" autocomplete="off">
-              <input class="feedback__input _req icon-phone" type="tel" name="phone" id="phone-1"
+              <input class="feedback__input _req tel icon-phone" type="tel" name="phone" id="phone-1"
                 placeholder="Введите Ваш номер" autocomplete="off">
             </div>
-            <button class="feedback__button btn" type="submit" name="submit">
+            <a href="#popup-success" class="feedback__button btn popup-link" type="submit" name="submit">
               Оставить заявку
-            </button>
+            </a>
             <p class="feedback__text">Отправляя форму я даю свое согласие на <a href="#">обработку персональных
                 данных</a></p>
           </form>
@@ -703,7 +893,7 @@
     <section class="finances section container-xl">
       <div class="container">
         <div class="container__wrapper">
-          <h2 class="container__title">Забота о финансах</h2>
+          <h2 class="container__title">Забота о ваших финансах</h2>
           <div class="finances__cards">
             <div class="finances__card">
               <span>01</span>
@@ -860,20 +1050,20 @@
     </section>
     <section class="feedback-second section container-xl">
       <div class="container">
-        <form class="feedback-second__form" id="form">
+        <form class="feedback-second__form" id="form-2">
           <h2 class="feedback-second__title">Оставьте заявку, и мы свяжемся <br> с вами как можно скорее</h2>
           <div class="feedback__form-inputs-row">
             <input class="feedback__input icon-user _req" type="text" name="name" id="name-2"
               placeholder="Введите Ваше имя" autocomplete="off">
-            <input class="feedback__input icon-phone _req" type="tel" name="phone" id="phone-2"
+            <input class="feedback__input icon-phone tel _req" type="tel" name="phone" id="phone-2"
               placeholder="Введите Ваш номер" autocomplete="off">
           </div>
           <p class="feedback__text">Отправляя форму я даю свое согласие на <a href="#">обработку персональных
               данных</a>
           </p>
-          <button class="feedback__button btn" type="submit" name="submit">
+          <a href="#popup-success" class="feedback__button btn popup-link" type="submit" name="submit">
             Оставить заявку
-          </button>
+          </a>
         </form>
       </div>
     </section>
@@ -944,23 +1134,23 @@
                 <img src="./assets/images/logo/img_logo.png" alt="logo">
               </a>
               <span>Автошкола “Город дорог” в Москве</span>
-              <a class="action__btn btn" href="#">Записаться на пробный урок</a>
+              <a class="action__btn btn popup-link" href="#popup-offer">Записаться на пробный урок</a>
             </div>
             <div class="footer__left-middle">
               <div class="footer__links">
                 <ul>
                   <li>
-                    <a href="#">
+                    <a href="https://t.me/Goroddorog_auto" target="_blank">
                       <img src="./assets/images/icons/icon_tg.svg" alt="icon_tg">
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="https://vk.com/gorod_dorog_avto" target="_blank">
                       <img src="./assets/images/icons/icon_vk.svg" alt="icon_vk">
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="https://wa.me/79935994676" target="_blank">
                       <img src="./assets/images/icons/icon_whats.svg" alt="icon_whats">
                     </a>
                   </li>
@@ -968,7 +1158,7 @@
                 <ul>
                   <li>
                     <img src="./assets/images/icons/icon_clock.svg" alt="icon_clock">
-                    <span>с 10:00 до 20:00 без выходных</span>
+                    <span>с 10:00 до 21:00 без выходных</span>
                   </li>
                   <li>
                     <img src="./assets/images/icons/icon_mail.svg" alt="icon_mail">
@@ -1086,10 +1276,49 @@
     </div>
   </footer>
   <!-- POPUPS -->
-  <div id="popup-selection" class="popup">
+  <div id="popup-success" class="popup">
     <div class="popup__body">
       <div class="popup__content">
         <a href="#" class="popup__close close-popup"></a>
+        <div class="popup__inner">
+          <img src="./assets/images/icons/icon_check-03.svg" alt="icon-check">
+          <span>Спасибо! Данные успешно отправлены</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="popup-offer" class="popup">
+    <div class="popup__body">
+      <div class="popup__content">
+        <a href="#" class="popup__close close-popup"></a>
+        <form class="feedback__form" id="form-3">
+          <div class="feedback__form-text">
+            <span class="feedback__form-title">Запись на пробный урок</span>
+            <p class="feedback__form-subtext">Заполните заявку и наши специалисты <br> ответят Вам в ближайшее время</p>
+          </div>
+          <div class="feedback__wrapper">
+            <div class="feedback__form-inputs">
+              <input class="feedback__input input-popup _req icon-user" type="text" name="name" id="name-3"
+                placeholder="Введите Ваше имя" autocomplete="off">
+              <input class="feedback__input _req input-popup tel icon-phone" type="tel" name="phone" id="phone-3"
+                placeholder="Введите Ваш номер" autocomplete="off">
+            </div>
+            <div class="feedback__inner">
+              <div class="feedback__check">
+                <label class="custom-checkbox">
+                  <input type="checkbox" name="confirm" id="confirm">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="feedback__confirm" for="confirm">Я даю согласие на обработку моих персональных данных
+                  <br>
+                  <a href="#">Политика конфиденциальности</a></label>
+              </div>
+              <a href="#popup-success" class="feedback__button-popup btn popup-link" type="submit" name="submit">
+                Записаться
+              </a>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
   </div>
