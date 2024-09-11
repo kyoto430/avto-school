@@ -12,20 +12,45 @@ new Swiper('.sale__slider', {
     clickable: true,
   },
   breakpoints: {
-    320: {
+    690: {
       slidesPerView: 1,
     },
-    610: {
-      slidesPerView: 2,
-    },
     744: {
-      slidesPerView: 2,
-    },
-    1024: {
-      slidesPerView: 3,
+      slidesPerView: 2.5,
     },
     1280: {
+      slidesPerView: 3,
+    },
+    1440: {
       slidesPerView: 4,
+    },
+  },
+});
+
+new Swiper('.tariffs-items__slider', {
+  spaceBetween: 20,
+  loop: false,
+  pagination: {
+    el: '.tariffs-items__pagination',
+    clickable: true,
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1.5,
+      spaceBetween: 8,
+    },
+    610: {
+      slidesPerView: 1.5,
+      spaceBetween: 8,
+    },
+    744: {
+      slidesPerView: 2.5,
+    },
+    1140: {
+      slidesPerView: 2.5,
+    },
+    1280: {
+      slidesPerView: 3,
     },
   },
 });

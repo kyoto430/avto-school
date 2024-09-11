@@ -155,7 +155,7 @@ if (window.innerWidth <= 1280) {
 }
 
 function slidesPlugin(activeSlide = 0) {
-  const slides = document.querySelectorAll('.slide');
+  const slides = document.querySelectorAll('.slide-item');
 
   slides[activeSlide].classList.add('active');
 

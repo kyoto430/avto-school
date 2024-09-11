@@ -547,29 +547,39 @@
               </div>
             </div>
           </div>
-          <div class="tariffs__items">
-            <div class="tariffs__item">
-              <div class="tariffs__item-description">
-                <img src="./assets/images/icons/icon_demo.svg" alt="icon_demo">
-                <span>Демо доступ к теории</span>
+          <div class="tariffs__items tariffs-items__slider swiper container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="tariffs__item">
+                  <div class="tariffs__item-description">
+                    <img src="./assets/images/icons/icon_demo.svg" alt="icon_demo">
+                    <span>Демо доступ к теории</span>
+                  </div>
+                  <a class="item__popup btn popup-link" href="#popup-offer">Получить</a>
+                </div>
               </div>
-              <a class="item__popup btn popup-link" href="#popup-offer">Получить</a>
-            </div>
-            <div class="tariffs__item">
-              <div class="tariffs__item-description">
-                <img src="./assets/images/icons/icon_world.svg" alt="icon_world">
-                <span>Самая широкая география вождения</span>
+              <div class="swiper-slide">
+                <div class="tariffs__item">
+                  <div class="tariffs__item-description">
+                    <img src="./assets/images/icons/icon_world.svg" alt="icon_world">
+                    <span>Самая широкая география вождения</span>
+                  </div>
+                  <a class="item__popup btn" href="https://goroddorog-avto.ru/about/instructors/"
+                    target="_blank">Выбрать
+                    инструктора</a>
+                </div>
               </div>
-              <a class="item__popup btn" href="https://goroddorog-avto.ru/about/instructors/" target="_blank">Выбрать
-                инструктора</a>
-            </div>
-            <div class="tariffs__item">
-              <div class="tariffs__item-description">
-                <img src="./assets/images/icons/icon_stream.svg" alt="icon_stream">
-                <span>Прямые эфиры с лектором</span>
+              <div class="swiper-slide">
+                <div class="tariffs__item">
+                  <div class="tariffs__item-description">
+                    <img src="./assets/images/icons/icon_stream.svg" alt="icon_stream">
+                    <span>Прямые эфиры с лектором</span>
+                  </div>
+                  <a class="item__popup btn popup-link" href="#popup-offer">Посмотреть расписание</a>
+                </div>
               </div>
-              <a class="item__popup btn popup-link" href="#popup-offer">Посмотреть расписание</a>
             </div>
+            <div class="swiper-pagination template-slider__pagination tariffs-items__pagination"></div>
           </div>
         </div>
       </div>
@@ -682,43 +692,54 @@
           <div class="home" id="home">
             <div class="home__container sale__slider swiper">
               <div class="swiper-wrapper">
-                <div class="slide swiper-slide" style="background-image: url(./assets/images/sale/01.jpg)">
-                  <span class="slide__number">01</span>
-                  <div class="slide__description">
-                    <h3>Приведи друга</h3>
-                    <p>
-                      Чтобы узнать сколько денег можно сэкономить на обучении в автошколе “Город дорог” просто позвоните
-                      одному из наших менеджеров.
-                    </p>
+                <div class="swiper-slide slide-item">
+                  <div class="slide" style="background-image: url(./assets/images/sale/01.jpg)">
+                    <span class="slide__number">01</span>
+                    <div class="slide__description">
+                      <h3>Приведи друга</h3>
+                      <p>
+                        Чтобы узнать сколько денег можно сэкономить на обучении в автошколе “Город дорог” просто
+                        позвоните
+                        одному из наших менеджеров.
+                      </p>
+                    </div>
                   </div>
                 </div>
-                <div class="slide swiper-slide" style="background-image: url(./assets/images/sale/02.jpg)">
-                  <span class="slide__number">02</span>
-                  <div class="slide__description">
-                    <h3>Скидка в день обращения</h3>
-                    <p>
-                      Чтобы узнать сколько денег можно сэкономить на обучении в автошколе “Город дорог” просто позвоните
-                      одному из наших менеджеров.
-                    </p>
+                <div class="swiper-slide slide-item">
+                  <div class="slide swiper-slide" style="background-image: url(./assets/images/sale/02.jpg)">
+                    <span class="slide__number">02</span>
+                    <div class="slide__description">
+                      <h3>Скидка в день обращения</h3>
+                      <p>
+                        Чтобы узнать сколько денег можно сэкономить на обучении в автошколе “Город дорог” просто
+                        позвоните
+                        одному из наших менеджеров.
+                      </p>
+                    </div>
                   </div>
                 </div>
-                <div class="slide swiper-slide" style="background-image: url(./assets/images/sale/03.jpg)">
-                  <span class="slide__number">03</span>
-                  <div class="slide__description">
-                    <h3>Скидка студентам</h3>
-                    <p>
-                      Чтобы узнать сколько денег можно сэкономить на обучении в автошколе “Город дорог” просто предъявив
-                      зачетку или студенческий билет!
-                    </p>
+                <div class="swiper-slide slide-item">
+                  <div class="slide swiper-slide" style="background-image: url(./assets/images/sale/03.jpg)">
+                    <span class="slide__number">03</span>
+                    <div class="slide__description">
+                      <h3>Скидка студентам</h3>
+                      <p>
+                        Чтобы узнать сколько денег можно сэкономить на обучении в автошколе “Город дорог” просто
+                        предъявив
+                        зачетку или студенческий билет!
+                      </p>
+                    </div>
                   </div>
                 </div>
-                <div class="slide swiper-slide" style="background-image: url(./assets/images/sale/04.jpg)">
-                  <span class="slide__number">04</span>
-                  <div class="slide__description">
-                    <h3>50% скидка в день рождения</h3>
-                    <p>
-                      Получите скидку в 5% просто предъявив паспорт с датой рождения.
-                    </p>
+                <div class="swiper-slide slide-item">
+                  <div class="slide swiper-slide" style="background-image: url(./assets/images/sale/04.jpg)">
+                    <span class="slide__number">04</span>
+                    <div class="slide__description">
+                      <h3>50% скидка в день рождения</h3>
+                      <p>
+                        Получите скидку в 5% просто предъявив паспорт с датой рождения.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
