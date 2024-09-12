@@ -54,3 +54,18 @@ new Swiper('.tariffs-items__slider', {
     },
   },
 });
+
+if(window.innerWidth <= 600) {
+  new Swiper('.about__slider', {
+    spaceBetween: 20,
+    loop: false,
+    navigation: {
+      prevEl: '.about__btn-prev',
+      nextEl: '.about__btn-next',
+    },
+    pagination: {
+      el: '.about__pagination',
+      clickable: true,
+    },
+  });
+}

@@ -178,7 +178,25 @@ slidesPlugin();
 function showMoreText() {
   document.addEventListener('DOMContentLoaded', function () {
     const showMoreButtons = document.querySelectorAll('.btn-show');
+    const showMoreBlock = document.querySelector('.about__btn-show');
     const hiddenText = document.querySelectorAll('.seo__text-hidden');
+    const hiddenBlock = document.querySelectorAll('.about__text-hidden');
+
+    showMoreBlock.addEventListener('click', function () {
+      hiddenBlock.forEach(function (text) {
+        if (text.style.transform !== 'scale(1)') {
+          text.style.position = 'initial';
+          text.style.transform = 'scale(1)';
+          showMoreBlock.innerText = 'Скрыть';
+          showMoreBlock.classList.add('arrow-up');
+        } else {
+          text.style.position = 'absolute';
+          text.style.transform = 'scale(0)';
+          showMoreBlock.innerText = 'Подробнее';
+          showMoreBlock.classList.remove('arrow-up');
+        }
+      });
+    });
 
     showMoreButtons.forEach(function (showMoreButton) {
       showMoreButton.addEventListener('click', function () {
