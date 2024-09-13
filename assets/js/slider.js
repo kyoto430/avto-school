@@ -55,7 +55,7 @@ new Swiper('.tariffs-items__slider', {
   },
 });
 
-if(window.innerWidth <= 600) {
+if (window.innerWidth <= 600) {
   new Swiper('.about__slider', {
     spaceBetween: 20,
     loop: false,

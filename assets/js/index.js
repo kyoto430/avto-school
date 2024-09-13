@@ -263,3 +263,22 @@ window.addEventListener('DOMContentLoaded', function () {
     input.addEventListener('keydown', mask, false);
   });
 });
+
+if (window.innerWidth <= 600) {
+  window.addEventListener('DOMContentLoaded', function () {
+    var swiper = new Swiper('.sale__slider', {
+      spaceBetween: 5,
+      on: {
+        slideChange: function () {
+          const activeSlide = document.querySelector(
+            '.sale__slider .swiper-slide.swiper-slide-active'
+          );
+          console.log(activeSlide);
+          if (activeSlide) {
+            activeSlide.classList.add('active');
+          }
+        },
+      },
+    });
+  });
+}
