@@ -1864,7 +1864,7 @@ img {
 .tariffs__card .tariffs__list-items {
   transform: scale(0);
   position: absolute;
-  transition: all 1s ease 0s;
+  transition: all 0.5s ease;
 }
 
 .tariffs__card:hover .tariffs__list-items {

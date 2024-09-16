@@ -266,7 +266,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
 if (window.innerWidth <= 600) {
   window.addEventListener('DOMContentLoaded', function () {
-    var swiper = new Swiper('.sale__slider', {
+    new Swiper('.sale__slider', {
       spaceBetween: 5,
       on: {
         slideChange: function () {
@@ -275,7 +275,7 @@ if (window.innerWidth <= 600) {
           );
           console.log(activeSlide);
           if (activeSlide) {
-            activeSlide.classList.add('active');
+            activeSlide.classList.toggle('active');
           }
         },
       },
