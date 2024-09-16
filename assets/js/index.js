@@ -159,11 +159,17 @@ function slidesPlugin(activeSlide = 0) {
 
   slides[activeSlide].classList.add('active');
 
-  for (const slide of slides) {
-    slide.addEventListener('click', () => {
-      clearActiveClasses();
+  if (window.innerWidth <= 743) {
+    slides.forEach((slide) => {
       slide.classList.add('active');
     });
+  } else {
+    for (const slide of slides) {
+      slide.addEventListener('click', () => {
+        clearActiveClasses();
+        slide.classList.add('active');
+      });
+    }
   }
 
   function clearActiveClasses() {
@@ -263,22 +269,3 @@ window.addEventListener('DOMContentLoaded', function () {
     input.addEventListener('keydown', mask, false);
   });
 });
-
-if (window.innerWidth <= 600) {
-  window.addEventListener('DOMContentLoaded', function () {
-    new Swiper('.sale__slider', {
-      spaceBetween: 5,
-      on: {
-        slideChange: function () {
-          const activeSlide = document.querySelector(
-            '.sale__slider .swiper-slide.swiper-slide-active'
-          );
-          console.log(activeSlide);
-          if (activeSlide) {
-            activeSlide.classList.toggle('active');
-          }
-        },
-      },
-    });
-  });
-}
